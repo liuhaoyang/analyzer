@@ -17,10 +17,19 @@
 package cloud.erda.analyzer.tracing.functions;
 
 import cloud.erda.analyzer.common.models.MetricEvent;
+<<<<<<< HEAD
+=======
+import cloud.erda.analyzer.common.utils.ConvertUtils;
+import lombok.Getter;
+>>>>>>> 1e1f18f... Add some log
 import lombok.extern.slf4j.Slf4j;
 import org.apache.flink.api.common.functions.AggregateFunction;
 
 import java.util.Date;
+<<<<<<< HEAD
+=======
+import java.util.HashMap;
+>>>>>>> 1e1f18f... Add some log
 import java.util.Map;
 
 /**
@@ -28,7 +37,11 @@ import java.util.Map;
  * @date 2021/9/22 01:42
  */
 @Slf4j
+<<<<<<< HEAD
 public class MetricFieldAggregateFunction implements AggregateFunction<MetricEvent, StatsAccumulator, MetricEvent> {
+=======
+public class MetricFieldAggregateFunction implements AggregateFunction<MetricEvent, MetricFieldAggregateFunction.StatsAccumulator, MetricEvent> {
+>>>>>>> 1e1f18f... Add some log
 
     @Override
     public StatsAccumulator createAccumulator() {
